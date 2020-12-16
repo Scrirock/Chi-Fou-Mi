@@ -29,6 +29,10 @@ body {
     padding: 2rem;
 }
 
+.mot{
+    display: none;
+}
+
 .group  {
     background-color: #1b3eb9;
     border: 3px solid #000840;
@@ -81,7 +85,7 @@ body {
     width: 27%;
 }
 
-#howWon{
+#whoWon{
     width: 39%;
     margin-right: 15px;
     margin-left: 15px;
@@ -103,4 +107,39 @@ body {
 
 img:hover{
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    #container, #choix, .choix, #point, .point, #history{
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+    #container{
+        width: 100%;
+    }
+    #divBot, #whoWon, img{
+        display: none;
+    }
+    .mot{
+        display: initial;
+    }
+    #point{
+        order: -1;
+        width: 100%;
+        height: auto;
+        font-size: 2rem;
+        bottom: 0;
+    }
+    #choix, .choix{
+        width: 100%;
+        height: auto;
+    }
+    #history{
+        width: 100%;
+    }
+    .point{
+        margin: 10px;
+        width: 45%;
+    }
 }
